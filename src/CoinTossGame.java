@@ -93,11 +93,11 @@ public class CoinTossGame {
     public void processGameResults(String guess) {
         int value = coin.flip();
         if (getPlayer1() == coin.getSide()) {
-            System.out.println("You Guessed Right!" + playerOne.getName().toUpperCase());
+            System.out.println(playerOne.getName().toUpperCase() +"  You Guessed Right!" );
             System.out.println();
         } else if (getPlayer2() == coin.getSide()) {
             System.out.println();
-            System.out.println("You Guessed Right!" + playerTwo.getName().toUpperCase());
+            System.out.println( playerTwo.getName().toUpperCase() +" You Guessed Right!" );
         }
         System.out.println("Game Over");
         scanner.close();
